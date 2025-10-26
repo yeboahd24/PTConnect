@@ -3,13 +3,13 @@ import { useAuthStore } from '@/store/authStore';
 import { useThemeStore } from '@/store/themeStore';
 import { useSidebarStore } from '@/store/sidebarStore';
 import { useNotificationStore } from '@/store/notificationStore';
-import { formatTimeAgo } from '@/utils/formatters';
+
 
 export function Topbar() {
   const { user } = useAuthStore();
   const { darkMode, toggleDarkMode } = useThemeStore();
   const { toggleSidebar } = useSidebarStore();
-  const { notifications, unreadCount, markAsRead } = useNotificationStore();
+  const { unreadCount } = useNotificationStore();
 
   return (
     <header className="sticky top-0 z-30 h-16 bg-card border-b border-border">

@@ -17,11 +17,11 @@ export function AdminDashboard() {
     setShowAddModal(false);
   };
 
-  const handleEdit = (id: string) => {
-    toast.success(`Editing ${activeTab.slice(0, -1)} ${id}`);
+  const handleEdit = (_id: string) => {
+    toast.success(`Editing ${activeTab.slice(0, -1)}`);
   };
 
-  const handleDelete = (id: string) => {
+  const handleDelete = (_id: string) => {
     toast.success(`${activeTab.slice(0, -1)} deleted successfully!`);
   };
 

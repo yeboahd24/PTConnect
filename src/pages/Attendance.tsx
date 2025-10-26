@@ -38,7 +38,7 @@ export function Attendance() {
   };
 
   // Get attendance for selected date
-  const dateAttendance = mockQuery.attendance.filter(
+  const _dateAttendance = mockQuery.attendance.filter(
     (record) =>
       new Date(record.date).toDateString() === selectedDate.toDateString()
   );

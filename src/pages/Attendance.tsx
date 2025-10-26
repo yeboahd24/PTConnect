@@ -14,7 +14,7 @@ export function Attendance() {
     mockQuery.students.map((student) => ({
       studentId: student.id,
       studentName: student.name,
-      status: AttendanceStatus.PRESENT,
+      status: AttendanceStatus.PRESENT as AttendanceStatus,
       notes: ''
     }))
   );
@@ -37,11 +37,7 @@ export function Attendance() {
     toast.success('Attendance exported successfully!');
   };
 
-  // Get attendance for selected date
-  const _dateAttendance = mockQuery.attendance.filter(
-    (record) =>
-      new Date(record.date).toDateString() === selectedDate.toDateString()
-  );
+
 
   // Calculate statistics
   const totalDays = mockQuery.attendance.length / mockQuery.students.length;

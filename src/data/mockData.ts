@@ -6,14 +6,14 @@ export const mockStore = {
     id: "user-1",
     name: "John Doe",
     email: "john.doe@ptconnect.com",
-    role: UserRole.PARENT as const,
+    role: UserRole.PARENT,
     avatar: "https://i.pravatar.cc/150?img=12",
     token: "mock-jwt-token-12345"
   },
   notifications: [
     {
       id: "notif-1",
-      type: NotificationType.MESSAGE as const,
+      type: NotificationType.MESSAGE,
       title: "New message from Ms. Sarah",
       message: "Regarding your child's progress",
       timestamp: new Date("2025-01-15T10:30:00"),
@@ -49,7 +49,7 @@ export const mockQuery = {
       studentId: "student-1",
       studentName: "Emma Doe",
       subject: "Mathematics",
-      term: ReportTerm.TERM_1 as const,
+      term: ReportTerm.TERM_1,
       score: 88,
       maxScore: 100,
       grade: "A",
@@ -64,7 +64,7 @@ export const mockQuery = {
       id: "att-1",
       studentId: "student-1",
       date: new Date("2025-01-15T00:00:00"),
-      status: AttendanceStatus.PRESENT as const,
+      status: AttendanceStatus.PRESENT,
       notes: ""
     },
     // ... existing code ...
@@ -75,11 +75,11 @@ export const mockQuery = {
       conversationId: "conv-1",
       senderId: "teacher-1",
       senderName: "Ms. Sarah Johnson",
-      senderRole: UserRole.TEACHER as const,
+      senderRole: UserRole.TEACHER,
       receiverId: "user-1",
       content: "Hello! I wanted to discuss Emma's progress in Mathematics.",
       timestamp: new Date("2025-01-15T10:30:00"),
-      status: MessageStatus.DELIVERED as const
+      status: MessageStatus.DELIVERED
     },
     // ... existing code ...
   ],
@@ -88,7 +88,7 @@ export const mockQuery = {
       id: "conv-1",
       participantId: "teacher-1",
       participantName: "Ms. Sarah Johnson",
-      participantRole: UserRole.TEACHER as const,
+      participantRole: UserRole.TEACHER,
       participantAvatar: "https://i.pravatar.cc/150?img=30",
       lastMessage: "Hi Ms. Johnson! I'd love to hear about her progress.",
       lastMessageTime: new Date("2025-01-15T10:35:00"),
@@ -103,7 +103,7 @@ export const mockQuery = {
       description: "Quarterly parent-teacher meeting to discuss student progress",
       date: new Date("2025-01-25T15:00:00"),
       location: "School Auditorium",
-      status: EventStatus.UPCOMING as const,
+      status: EventStatus.UPCOMING,
       organizer: "School Administration",
       isSubscribed: true
     },

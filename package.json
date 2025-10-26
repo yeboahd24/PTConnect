@@ -7,13 +7,14 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview --host 0.0.0.0 --port $PORT",
-    "start": "vite preview --host 0.0.0.0 --port $PORT"
+    "preview": "vite preview",
+    "start": "node server.js"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.16",
     "axios": "^1.12.2",
     "clsx": "^2.1.1",
+    "express": "^4.18.2",
     "lucide-react": "^0.548.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",

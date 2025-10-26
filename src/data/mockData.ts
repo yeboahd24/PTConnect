@@ -67,7 +67,20 @@ export const mockQuery = {
       status: AttendanceStatus.PRESENT,
       notes: ""
     },
-    // ... existing code ...
+    {
+      id: "att-2",
+      studentId: "student-1",
+      date: new Date("2025-01-14T00:00:00"),
+      status: AttendanceStatus.ABSENT,
+      notes: "Sick leave"
+    },
+    {
+      id: "att-3",
+      studentId: "student-1",
+      date: new Date("2025-01-13T00:00:00"),
+      status: AttendanceStatus.LATE,
+      notes: "Traffic delay"
+    }
   ],
   messages: [
     {
@@ -107,7 +120,26 @@ export const mockQuery = {
       organizer: "School Administration",
       isSubscribed: true
     },
-    // ... existing code ...
+    {
+      id: "event-2",
+      title: "Sports Day",
+      description: "Annual sports day event",
+      date: new Date("2025-01-16T09:00:00"),
+      location: "School Playground",
+      status: EventStatus.ONGOING,
+      organizer: "Sports Department",
+      isSubscribed: false
+    },
+    {
+      id: "event-3",
+      title: "Science Fair",
+      description: "Student science project exhibition",
+      date: new Date("2025-01-10T10:00:00"),
+      location: "Science Lab",
+      status: EventStatus.COMPLETED,
+      organizer: "Science Department",
+      isSubscribed: true
+    }
   ],
   announcements: [
     {
